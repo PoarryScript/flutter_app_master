@@ -2,6 +2,7 @@ import 'dart:async' show Future;
 
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 void main() => runApp(MyApp());
@@ -112,6 +113,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   //dump widgets库的状态
 //                  debugDumpApp();
+                  //dump 渲染cen层
+//                  debugDumpRenderTree();
                   Navigator.push(
                       context, new MaterialPageRoute(builder: (context) {
                     return new NewRoute();
