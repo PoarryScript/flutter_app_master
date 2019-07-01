@@ -110,6 +110,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text("New route"),
                 textColor: Colors.black,
                 onPressed: () {
+                  //dump widgets库的状态
+//                  debugDumpApp();
                   Navigator.push(
                       context, new MaterialPageRoute(builder: (context) {
                     return new NewRoute();
