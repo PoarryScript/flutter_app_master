@@ -173,7 +173,19 @@ class NewRoute extends StatelessWidget {
                 TextSpan(text: "https://flutterchina.club",style: TextStyle(color: Colors.blue),),
               ]
 
-            ))
+            )),
+            RaisedButton(child: Text("raised Button"), onPressed: () => {},),
+            FlatButton(child: Text("Flat Button"), onPressed: () => {},),
+            OutlineButton(child: Text("Outline Button"), onPressed: () => {},),
+            IconButton(icon: Icon(Icons.thumb_up), onPressed: () => {},),
+            FlatButton(color: Colors.blue,
+              highlightColor: Colors.blue[700],
+              colorBrightness: Brightness.dark,
+              splashColor: Colors.grey,
+              child: Text("Submit"),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0)),
+              onPressed: () => {},),
 
           ],
         ),
