@@ -45,6 +45,7 @@ flutter:
   assets:
     - assets/config.json
     - assets/images/ucenter_image_six.jpg
+    - assets/images/ic_launcher.png
 
 #    - images/a_dot_ham.jpeg
 

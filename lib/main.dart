@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import 'routes/ImageAndIconImageWidget.dart';
 import  'routes/TextAndButtonWidget.dart';
 
 void main() => runApp(MyApp());
@@ -126,7 +127,19 @@ class _MyHomePageState extends State<MyHomePage> {
                           arguments: new Object()),
                       maintainState: false,
                       fullscreenDialog: true));
-                })
+                }),
+            RaisedButton(child: Text("Image and Icon"),
+                textColor: Colors.black,
+                onPressed: () {
+                  Navigator.push(
+                      context, new MaterialPageRoute(builder: (context) {
+                    return new ImageAndIconImageWidget();
+                  }, settings: new RouteSettings(name: "哈哈哈",
+                      isInitialRoute: false,
+                      arguments: new Object()),
+                      maintainState: false,
+                      fullscreenDialog: true));
+                }),
           ],
         ),
       ),
